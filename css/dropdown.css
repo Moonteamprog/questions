@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+
+
+body{
+    background-color: #e1e1e1; 
+    direction: rtl;   
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ .all{
+    margin: auto;
+    display: block;
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 12px;
+    margin-top: 20px;
+    overflow: hidden;
+
+ } 
+
+ #que span{
+    font-size: 25px;
+    color: #252525;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background-color: #3686e0;
+}
+.but{
+    margin: 20px;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 10px;
+    text-align: center;
+ }
+
+ #sub , #next {
+    font-size: 18px;
+    width: 10%;
+    margin: 10px;
+    margin-right: 20px;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+ }
+ #sub {
+    background-color: #3686e0;
+ }
+
+ #next {
+    background: none;
+ }
+
+.but button{
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    list-style-type: none;
+    padding: 10px;
+    word-break:keep-all;
+    height: fit-content;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30px 1fr;
+} 
+button:hover {
+    background-color: #25252510;
+}
+
+.li_number {
+    background-color: #3686e066;
+    padding: 3px;
+    border-radius: 6px;
+}
+.li_text {
+    display: block;
+}
+.but  li{
+    display: inline-block;
+    display: block;
+    height: 30px;
+    
+}
+#i1{
+    display: inline;
+    padding-left: 30%;
+
+
+
+}
+
+.mon{
+    display: block;
+    margin: auto;
+    color: #252525;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #3686e0;
+}
+
+@media screen and ( max-width: 500px ) {
+    .all {
+        width: 90%;
+    }
+    .but {
+        grid-template-columns: 1fr;
+    }
+    
+    #sub , #next {
+        font-size: 16px;
+        width: 20%;
+        margin: 10px;
+        margin-right: 20px;
+        padding: 3px;
+        border: none;
+        border-radius: 3px;
+    }
+    
+    #que span{
+        font-size: 14px;
+    }
+
+}
